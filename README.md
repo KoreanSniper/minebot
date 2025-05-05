@@ -2,5 +2,8 @@
 이건 디스코드봇인 minebot의 주식 파일 및 모듈입니다.
 
 # 사용법
+import asyncio
 import minebot
-print(minebot.getapi()) #현재 주식 가격을 출력함
+
+data = asyncio.run(minebot.getapi())
+print(data) #현재 주식 가격을 출력함
